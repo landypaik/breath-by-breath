@@ -1,0 +1,127 @@
+body {
+  font: 11px sans-serif;
+}
+
+.title {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+checkbox {
+  margin: 6px;
+}
+
+button {
+  padding: 6px;
+}
+
+.explanation {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+
+.navBar2 {
+  padding-left: 5px;
+}
+
+.average, .number {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 12px;
+  text-align: left;
+  display: inline-block;
+  padding: 10px;
+}
+
+.number {
+  font-size: 20px;
+  padding-left: 5px;
+  padding-right: 25px;
+  font-weight: bolder;
+}
+
+.units {
+  padding-bottom: 5px;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.navBar {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 12px;
+  font-weight: lighter;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 50px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.buttons {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.label {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.legend {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.tick {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  padding-left: 50px;
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.tooltip {
+  font-family: roboto;
+  src:
+  url("/roboto/Roboto-Regular.ttf");
+  font-size: 15px;
+  font-weight: lighter;
+  position: absolute;
+  width: 20px;
+  height: 28px;
+  pointer-events: none;
+}

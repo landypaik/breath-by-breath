@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+<div class="title">Smoking Pattern</div>
+<div class="explanation">Click on a circle to filter for the circles of the same type.</div>
+<div class="navBar">
+  Week 1 <input type="checkbox" class="checkBox" id="myCheck1" checked>
+  Week 2 <input type="checkbox" class="checkBox" id="myCheck2" checked>
+  Week 3 <input type="checkbox" class="checkBox" id="myCheck3" checked>
+  Week 4 <input type="checkbox" class="checkBox" id="myCheck4" checked>
+  <button class="buttons" onclick="check()">Check All</button>
+  <button class="buttons" onclick="uncheck()">Uncheck All</button>
+</div>
+
+<div class="navBar2">
+  <div class="average">Monday:<div class="number" id="monInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Tuesday:<div class="number" id="tuesInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Wednesday:<div class="number" id="wedInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Thursday:<div class="number" id="thursInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Friday:<div class="number" id="friInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Saturday:<div class="number" id="satInput">0</div><div class="units">cigarettes</div></div>
+  <div class="average">Sunday:<div class="number" id="sunInput">0</div><div class="units">cigarettes</div></div>
+</div>
+
+<body>
+<script src="d3.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
