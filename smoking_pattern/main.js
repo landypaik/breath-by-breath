@@ -1,6 +1,3 @@
-/* Michael Richardson helped me understand and fix errors with mouse down and mouse up */
-
-
 var activities = ["coffee", "studying", "food", "traveling", "exercise", "idleTime", "smokingPeers", "alcohol", "sleep", "chores"];
 
 function getActivity(classText)
@@ -23,7 +20,7 @@ function getActivity(classText)
 var changeArray = [];
 
 var margin = {top: 20, right: 0, bottom: 30, left: 70},
-    width = 700 - margin.left - margin.right,
+    width = 650 - margin.left - margin.right,
     height = 300 - margin.top - margin.bottom;
 
 // setup x 
@@ -289,10 +286,13 @@ function mousedown() {
     }
   }
   filterVisible();
+  var resetB = document.getElementById("resetButton");
+  resetB.style.visibility = "visible";
 }
 
 function mouseup() 
 {
+  /*
   var circles = document.getElementsByTagName("circle");
   for (var i =0; i < changeArray.length; i++)
   {
@@ -300,9 +300,11 @@ function mouseup()
     var circle = circles[circleIndex];
     circle.style.visibility = "visible";
   }
+  */
   changeArray = [];
   filterVisible();
 }
+
 
 function check() {
     document.getElementById("myCheck1").checked = true;
@@ -320,6 +322,24 @@ function uncheck() {
     document.getElementById("myCheck4").checked = false;
     d3.selectAll("circle").style("visibility", "hidden");
     filterVisible();
+}
+
+function reset() {
+    var resetB = document.getElementById("resetButton");
+    document.getElementById("myCheck1").checked = true;
+    document.getElementById("myCheck2").checked = true;
+    document.getElementById("myCheck3").checked = true;
+    document.getElementById("myCheck4").checked = true;
+    d3.selectAll("circle").style("visibility", "visible");
+    filterVisible();
+
+    if (resetB.style.visibility === "visible")
+    {
+        resetB.style.visibility = "hidden";
+    }
+    else {
+        resetB.style.visibility = "hidden";
+    }
 }
 
 function filterVisible() {
